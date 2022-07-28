@@ -3,18 +3,19 @@
 
 /* 노멀라이징 */
 
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-ul,li{
+ul,
+li {
     text-decoration: none;
     color: inherit;
     list-style: none;
@@ -22,7 +23,8 @@ ul,li{
     margin: 0;
 }
 
-img, video{
+img,
+video {
     max-width: 100%;
     display: block;
 }
@@ -73,17 +75,80 @@ html>body {
 
 /* top-bar-wrap */
 
-.top-bar-wrap{
+.top-bar-wrap {
     width: 1920px;
     height: 85px;
-    background-color: pink;
+
 }
 
-.top-bar{
-    background-color: wheat;
+.top-bar__logo{
+    margin-left: 10%;
 }
 
-.user-logo > i{
-    width: 30px;
-    height: 30px;
+.icon-box{
+    margin-right: 12%;
+}
+
+.icon-box>a,
+.icon-box>.cart-icon-box {
+    font-size: 20px;
+    color: rgb(9, 9, 9);
+}
+
+.icon-box > a:hover {
+    color: #6FCCCC;
+
+}
+
+.cart-icon-box {
+    position: relative;
+    margin-top: -27px;
+}
+
+.cart-icon-box>a {
+    position: absolute;
+}
+
+.cart-icon {
+    display: block;
+}
+
+.cart-icon-box:hover>.cart-icon {
+    display: none;
+
+}
+
+.hover-cart-icon {
+    display: none;
+}
+
+.cart-icon-box:hover>.hover-cart-icon {
+    display: block;
+    color: #6FCCCC;
+}
+
+
+/* top-bar-menu-wrap */
+.top-bar-menu {
+    width: 100%;
+    height: 60px;
+    background-color: #6fcccc;
+}
+
+.top-bar-menu > ul {
+    border: 1px solid black;
+    background-color: rgb(137, 203, 247);  
+    border-radius: 10px;
+    transition: border-radius 0s 0.3s;
+}
+
+.top-bar-menu ul > li {
+   position: relative;
+}
+
+.top-bar-menu > ul ul{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
