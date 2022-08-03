@@ -21,6 +21,11 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
 
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
+
+
   <!-- 테일윈드 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
     integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
@@ -53,7 +58,7 @@
     <div id="fullpage">
 
 
-      <section class="section page-1" data-tooltip="MAIN PAGE">
+      <section class="section page-1 first-page" data-tooltip="MAIN PAGE">
         <header class="top-bar-wrap fixed inset-0 bottom-auto">
           <div class="container mx-auto  h-full flex">
             <div class="flex-1"></div>
@@ -70,7 +75,7 @@
 
               <div class="cart-icon-box">
                 <a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i>
-                <a href="#" class="hover-cart-icon"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                  <a href="#" class="hover-cart-icon"><i class="fa-solid fa-cart-arrow-down"></i></a>
               </div>
 
             </div>
@@ -80,71 +85,326 @@
 
           <nav class="top-bar-menu text-center items-center justify-center flex ">
             <ul class="flex gap-16">
-              <li><a href="#">탑</a>
-              <ul>
-                <li><a href="#">블라우스</a></li>
-                <li><a href="#">티</a></li>
-                <li><a href="#">셔츠</a></li>
-                <li><a href="#">니트</a></li>
-              </ul>
-             </li>
-   
-             <li><a href="#">아우터</a>
-               <ul>
-                 <li><a href="#">자켓</a></li>
-                 <li><a href="#">코트</a></li>
-                 <li><a href="#">가디건</a></li>
-                 <li><a href="#">머플러</a></li>
-               </ul>
-              </li>
-   
-              <li><a href="#"> 팬츠</a>
-               <ul>
-                 <li><a href="#">청바지</a></li>
-                 <li><a href="#">짧은바지</a></li>
-                 <li><a href="#">긴바지</a></li>
-                 <li><a href="#">레깅스</a></li>
-               </ul>
-              </li>
-   
-              <li><a href="#">악세서리</a>
-               <ul>
-                 <li><a href="#">귀고리</a></li>
-                 <li><a href="#">목걸이</a></li>
-                 <li><a href="#">반지</a></li>
-                 <li><a href="#">팔찌</a></li>
-               </ul>
+              <li class="flex"><a href="#">JEWELRY</a>
+                <div>
+                  <div class="jewelry-menu-box container flex justify-center ml-44 gap-44 mt-8">
+                    <div class="flex flex-col text-left">
+                      <ul>
+                        <h3 class="font-bold">카테고리별 보기</h3>
+                        <li class="mt-3"><a href="#">네크리스 및 펜던트</a></li>
+                        <li class="mt-3"><a href="#">브레이슬릿</a></li>
+                        <li class="mt-3"><a href="#">이어링</a></li>
+                        <li class="mt-3"><a href="#">링</a></li>
+                        <li class="mt-3"><a href="#">파인 워치</a></li>
+                        <li class="mt-3"><a href="#">브로치</a></li>
+                        <li class="font-bold mt-5"><a href="#">모든 주얼리 보기 <i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                      </ul>
+
+
+
+                    </div>
+
+                    <div class="flex flex-col text-left">
+                      <ul>
+                        <h3 class="font-bold">메탈별로 보기</h3>
+                        <li class="mt-3"><a href="#">골드 주얼리</a></li>
+                        <li class="mt-3"><a href="#">로즈 골드 주얼리</a></li>
+                        <li class="mt-3"><a href="#">플래티늄 주얼리</a></li>
+                        <li class="mt-3"><a href="#">실버 주얼리</a></li>
+
+                      </ul>
+
+                      <ul class="mt-10">
+                        <h3 class="font-bold">젬스톤별로 보기</h3>
+                        <li class="mt-3"><a href="#">다이아몬드 주얼리</a></li>
+                        <li class="mt-3"><a href="#">펄 주얼리</a></li>
+                        <li class="mt-3"><a href="#">터코이즈 주얼리</a></li>
+                        <li class="mt-3"><a href="#">아쿠아마린 주얼리</a></li>
+                        <li class="mt-3"><a href="#">컬러 젬스톤 주얼리</a></li>
+
+                      </ul>
+
+
+
+                    </div>
+
+                    <div class="flex flex-col text-left">
+                      <ul>
+                        <h3 class="font-bold">검색</h3>
+                        <li class="mt-3"><a href="#">BEST 주얼리</a></li>
+                        <li class="mt-3"><a href="#">NEW 주얼리</a></li>
+                        <li class="mt-3"><a href="#">HIGH 주얼리</a></li>
+                        <li class="mt-3"><a href="#">개성있는 주얼리</a></li>
+                        <li class="mt-3"><a href="#">심플한 주얼리</a></li>
+
+                      </ul>
+
+                      <ul class="mt-6">
+                        <li class="mt-3"><a href="#">스터드 이어링</a></li>
+                        <li class="mt-3"><a href="#">후프 이어링</a></li>
+                        <li class="mt-3"><a href="#">스태킹 링</a></li>
+
+
+                      </ul>
+
+                      <button class="font-bold mt-6">카카오톡선물하기 <i class="fa-solid fa-gift"></i></button>
+
+
+
+
+
+                    </div>
+
+                    <div class="flex flex-col text-left">
+                      <ul>
+                        <h3 class="font-bold">아이코닉한 컬렉션</h3>
+                        <li class="mt-3"><a href="#">Tiffany T</a></li>
+                        <li class="mt-3"><a href="#">Tiffany Hardwear</a></li>
+                        <li class="mt-3"><a href="#">티파니 노트</a></li>
+                        <li class="mt-3"><a href="#">티파니 빅토리아 ™</a></li>
+                        <li class="mt-3"><a href="#">리턴투티파니 ™</a></li>
+                        <li class="mt-3"><a href="#">아틀라스 ™</a></li>
+                        <li class="mt-3"><a href="#">티파니 키</a></li>
+                        <li class="mt-3"><a href="#">엘사 퍼레티 ™</a></li>
+                        <li class="mt-3"><a href="#">Tiffany & Co. Schlumberger</a></li>
+                        <li class="mt-3"><a href="#">팔로마 피카소™</a></li>
+                        <li class="mt-5 font-bold"><a href="#">모든 컬렉션 보기 <i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+
+                      </ul>
+
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+
+
               </li>
 
-              <li><a href="#">악세서리</a>
-                <ul>
-                  <li><a href="#">귀고리</a></li>
-                  <li><a href="#">목걸이</a></li>
-                  <li><a href="#">반지</a></li>
-                  <li><a href="#">팔찌</a></li>
-                </ul>
-               </li>
+              <li><a href="#">COUPLES & WEDDING RING</a>
 
-               <li><a href="#">악세서리</a>
-                <ul>
-                  <li><a href="#">귀고리</a></li>
-                  <li><a href="#">목걸이</a></li>
-                  <li><a href="#">반지</a></li>
-                  <li><a href="#">팔찌</a></li>
-                </ul>
-               </li>
+              </li>
+
+              <li><a href="#"> FINE WATCHES</a>
+
+              </li>
+
+              <li><a href="#">HOME & ACCESSORIES</a>
+
+              </li>
+
+              <li><a href="#">PERFUME</a>
+
+              </li>
+
+              <li><a href="#">MEN'S</a>
+
+              </li>
+
+              <li><a href="#">GIFTS</a>
+
+              </li>
             </ul>
           </nav>
 
-       
+
         </header>
 
+        <div class="slider-box con ">
+          <!-- 슬라이더 메인 컨테이너 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- 슬라이드 -->
+              <div class="swiper-slide slide-1"><img src="./img/슬라이드이미지/슬라이드1.png" alt=""></div>
 
-       
+              <div class="swiper-slide slide-2"><img src="./img/슬라이드이미지/슬라이드2.png" alt=""></div>
+
+              <div class="swiper-slide slide-3"><img src="./img/슬라이드이미지/슬라이드3.png" alt=""></div>
+
+              <div class="swiper-slide slide-4"><img src="./img/슬라이드이미지/슬라이드4.png" alt=""></div>
+
+
+            </div>
+            <!-- 슬라이드 페이지 -->
+            <div class="swiper-pagination "></div>
+
+            <!-- 화살표 -->
+            <div class="swiper-navigation">
+              <div class="swiper-button-prev">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+              </div>
+
+              <div class="swiper-button-next">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+
 
       </section>
 
+      <section class="section page-2 second-page" data-tooltip="TIFFANY T1">
+        <div class="con">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/Lu7ybNpedLw?&autoplay=1&mute=1"
+            title="Tiffany & Co — Tiffany x ROSÉ" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="section page-3 third-page" data-tooltip="NEW PRODUCT">
+        <div class="new-product-page-wrap ">
+          <div class="con mx-auto">
+            <div class="title-box text-center ">
+              <p> JEWELRY<br></p>
+              <p>NEW PRODUCT</p>
+
+              <button class="mt-5">자세히 보기 <span class="arrow-button ml-2"><i
+                    class="fa-regular fa-circle-left"></i></span></button>
+
+
+            </div>
+
+            <div class="new-product-items-box mt-32 ">
+              <ul class="flex justify-center gap-20 ">
+                <li class="mt-10"><figure><img src="./img/New product item/Group 6.png" alt=""></figure></li>
+                <li class="mt-5"><figure><img src="./img/New product item/Group 7.png" alt=""></figure></li>
+                <li><figure><img src="./img/New product item/Group 8.png" alt=""></figure></li>
+                <li><figure><img src="./img/New product item/Group 9.png" alt=""></figure></li>
+                <li><figure><img src="./img/New product item/Group 10.png" alt=""></figure></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-4 fourth-page" data-tooltip="TIFFANY STORY">
+        <div class="tiffany-story-box">
+          <div class="con relative">
+            <div><img class="w-full h-full object-cover block" src="./img/티파니 스토리.png" alt=""></div>
+
+            <div class="tiffany-story-title "">
+              <div  class="story-title" ><img src="./img/BOTANICA _ 2022 blue book.png" alt=""></div>
+              <div class="more-btn mt-7 mx-auto">
+              <p class="text-center">Learn More</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section page-5 fifth-page" data-tooltip="TIFFANY'S DIAMOND">
+        <div class="tiffany-diamond-box">
+          <div class="con relative">
+           <div><img class="w-full h-full object-cover block" src="./img/다이아몬드의 여정.png" alt=""></div>
+            
+           <div class="text-items-box">
+            <div class="text-items text-center">
+              <p class="text-6xl">Tiffany Diamond's Journey</p> <br>
+              <p class="text-4xl mt-3">티파니 다이아몬드의 여정</p>
+            </div>
+
+            <div class="text-items-2">
+             당신의 다이아몬드가 어디서 부터 왔는지 <br>
+            100% 추적할 수 있는 티파니만의 <span class="font-bold">믿을수 있는 소싱</span>
+              
+            </div>
+
+            <div class="more-btn mx-auto  mt-10">
+              자세히보기 <span class="ml-2"><i class="fa-solid fa-angle-right"></i></span> 
+            </div>
+       
+           </div>
+          
+          
+          </div>
+        </div>
+       
+      </section>
+
+
+      <section class="section page-6 footer-page" data-tooltip="CONTACT">
+          <div class="footer-box-wrap ">
+           <footer class="con h-full ">
+            <div>
+              <div class="service-box ">
+                <ul class="flex justify-center items-center gap-40">
+                  <li ><a href="#">
+                    <img src="./img/footer-icon/eva_phone-call-outline.png" class="ml-10" alt="">
+                    <p class="mt-3">티파니 고객 서비스</p>
+                  </a></li>
+
+                  <li><a href="#">
+                    <img src="./img/footer-icon/uil_calender.png" class="ml-8" alt="">
+                    <p class="mt-3">상담 예약하기</p>
+                  </a></li>
+
+                  <li class="present-box"><a href="#">
+                    <img src="./img/footer-icon/ep_present.png" class="ml-14"  alt="">
+                    <p class="mt-3">아이코닉한 블루 박스</p>
+                  </a></li>
+                </ul>
+              </div>
+
+              <div class="footer-contents flex flex-col">
+                <div class="sns-list">
+                  <ul class="flex justify-center items-center gap-12">
+                    <li><a href="#"><img src="./img/footer-icon/Group 317.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/footer-icon/Group 318.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/footer-icon/Group 319.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/footer-icon/Group 320.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/footer-icon/Group 321.png" alt=""></a></li>
+                  </ul>
+                </div>
+                 
+                <div class="footer-menu mt-12">
+                  <ul class="flex justify-center items-center gap-12 ">
+                    <li><a href="#">JEWELRY</a></li>
+                    <li><a href="#">COUPLES & WEDDING</a></li>
+                    <li><a href="#">FINE WATCHES</a></li>
+                    <li><a href="#">HOME & ACCESSORIES</a></li>
+                    <li><a href="#">PERFUME</a></li>
+                    <li><a href="#">MEN'S</a></li>
+                    <li><a href="#">GIFTS</a></li>
+                  </ul>
+                </div>
+
+               
+
+              </div>
+
+              <div class="copy-right text-center mt-12"">
+                © T&CO. 2022
+              </div>
+
+            </div>
+
+           </footer>  
+          
+          </div>
+          
+        
+
+      </section>
+   
+
     </div>
+
+   
+
   </div>
 
 </body>
