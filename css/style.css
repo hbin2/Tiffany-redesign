@@ -51,6 +51,25 @@ html>body {
     max-width: 1920px;
     margin: 0 auto;
 }
+.gap-110{
+    gap: 110px;
+}
+
+.gap-140{
+    gap: 140px;
+}
+
+.gap-150{
+    gap: 150px;
+}
+
+.gap-165{
+    gap: 165px;
+}
+
+.gap-170{
+    gap: 170px;
+}
 
 /* 풀페이지 툴팁 */
 
@@ -166,8 +185,7 @@ html>body {
     left: 0;
     top: 100%;
     transition: height 0.2s;
-    background-color: white;
-   
+    background-color: rgba(255, 255, 255, 0.89);
     z-index: 60;
 }
 
@@ -195,7 +213,7 @@ html>body {
 
 .top-bar-menu ul>li:hover>div {
     height: 550px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(161, 161, 161);
 
 }
 
@@ -211,6 +229,20 @@ html>body {
     color: rgb(24, 24, 24);
 }
 
+.menu-image{
+    width: 487px;
+    height: 330px;
+}
+
+.perfume-image{
+    width: 830px;
+    height: 350px;
+}
+
+.gift-image{
+    width: 550px;
+    height: 400px;
+}
 
 /* slider-box */
 .slider-box {
