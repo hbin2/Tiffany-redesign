@@ -244,6 +244,11 @@ html>body {
     height: 400px;
 }
 
+.watch-image{
+    width: 530px;
+
+}
+
 /* slider-box */
 .slider-box {
     position: absolute;
@@ -401,7 +406,7 @@ html>body {
 }
 
 .tiffany-story-title > .story-title img{
-    animation: fly 1.5s linear infinite;
+    animation: fly 2s linear infinite;
 }
 
 @keyframes fly {
@@ -411,7 +416,7 @@ html>body {
     }
     
     50% {
-    transform: translateY(17px);
+    transform: translateY(14px);
     }
     
     
